@@ -5,8 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        String name = "홍길동";
+        String name = "";
+        int age = 0;
+        System.out.println("당신의 이름은?");
         name = keyboard.nextLine();
-        System.out.println("입력 받은 이름 :");
+        System.out.println("%s님의 나이는?");
+        age = keyboard.nextLine();
+
+        System.out.printf("XXX님의 나이는 YY살 입니다.\n, name, age");
     }
-}

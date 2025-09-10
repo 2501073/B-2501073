@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        String name = "홍길동";
-        name = keyboard.nextLine();
-        System.out.println("입력 받은 이름 :");
+        char ch;
+        System.out.printf("문자 하나 입력 : ");
+        ch = Scanner.next().charAt(0);
+
+        System.out.printf("입력한 문자 %c의 ASCII 코드는 %d이다.\n", ch, ch);
     }
 }
